@@ -16,6 +16,10 @@ public class PersonTest {
         System.out.println(person1);
         person.withdrawMoney(person1);
 
+        System.out.println("After withdraw");
+        System.out.println(person);
+        System.out.println(person1);
+
 
     }
 }
