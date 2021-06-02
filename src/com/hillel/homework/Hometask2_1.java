@@ -14,7 +14,8 @@ public class Hometask2_1 {
 
             int num;
             num = Integer.parseInt(input);
-                System.out.println(zer = zer + num);
+                zer = zer + num;
         }
+        System.out.println(zer);
     }
 }
