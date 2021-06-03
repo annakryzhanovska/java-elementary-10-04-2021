@@ -3,19 +3,16 @@ package com.hillel;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    //    String[] array = new String[5];
-        ArrayList<String> array = new ArrayList<String>();
-        ArrayList <Integer> numList = new ArrayList<Integer>();
+        String[] array = new String[5];
 
-        for (int i = 0; i < 5; i++){
+        for (int i = 0; i < array.length; i++){
             int quantity = (5 - i);
             System.out.println("Введите " + quantity + " любых строк :");
-//            array[i] = reader.readLine();
+            array[i] = reader.readLine();
         }
 
         System.out.println("Ваши строки: ");
@@ -23,6 +20,19 @@ public class Main {
             System.out.print(i + "/ ");
         }
         System.out.println();
+        System.out.println(array[0].length());
+
+
+        int num = 0;
+        for (int i = 0; i < array.length; i++) {
+            if ((array[i].length()) > num){
+                num = array[i].length();
+            }
+
+        }
+
+
+
 
 //        StringBuffer str = new StringBuffer("a");
 //        for (int i = 0; i < array.length; i++) {

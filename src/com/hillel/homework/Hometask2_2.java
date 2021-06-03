@@ -8,26 +8,22 @@ public class Hometask2_2 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("input a number");
-        String num = reader.readLine();
-        long num2 = Long.parseLong(num);
-//        System.out.println(fact(num2));
-        System.out.println(recursion(num2));
+        String input = reader.readLine();
+        long number = Long.parseLong(input);
+        System.out.println("Рекурсия ответ " + recursionFactorial(number));
+        System.out.println(fact(number));
     }
 
-//    public static int fact(int num2) {
-//        if (num2 < 0) {
-//            return 0;
-//        }
-//        int result = 1;
-//        if (num2 == 0) {
-//            return result;
-//        }
-//        for (int i = 1; i <= num2; i++) {
-//            result = result * i;
-//        }
-//        return result;
-//    }
-    public static long recursion(long num2) {
+    static long recursionFactorial(long n) {
+        long result = 1;
+        if (n == 1 || n == 0) {
+            return result;
+        }
+        result = n * recursionFactorial(n-1);
+        return result;
+    }
+
+    public static long fact (long num2) {
         long result = 1;
         for (int i = 1; i <= num2; i++) {
             result = result * i;
