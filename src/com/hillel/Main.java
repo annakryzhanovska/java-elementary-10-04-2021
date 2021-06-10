@@ -22,17 +22,12 @@ public class Main {
         System.out.println();
         System.out.println(array[0].length());
 
-
         int num = 0;
         for (int i = 0; i < array.length; i++) {
             if ((array[i].length()) > num){
                 num = array[i].length();
             }
-
         }
-
-
-
 
 //        StringBuffer str = new StringBuffer("a");
 //        for (int i = 0; i < array.length; i++) {
