@@ -11,7 +11,8 @@ public class Dog {
         this.strength = strength;
     }
 
-//    void fight(Dog dog){
-//        System.out.println(this.dog);
-//    }
+    void fight(Dog dog){
+        this.strength =
+
+    }
 }

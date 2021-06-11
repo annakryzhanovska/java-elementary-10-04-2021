@@ -13,10 +13,9 @@ public class Cat {
     }
 
     public boolean equals(Object object){
-        String bob = "bob";
         if(object instanceof Cat){
         Cat cat = ((Cat) object);
-        return this.age == cat.age && this.weight < cat.weight;
+        return this.age == cat.age && this.weight == cat.weight;
         }
         return false;
     }
