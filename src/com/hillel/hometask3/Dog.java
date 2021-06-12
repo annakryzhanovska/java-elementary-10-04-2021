@@ -11,8 +11,16 @@ public class Dog {
         this.strength = strength;
     }
 
-    void fight(Dog dog){
-        this.strength =
+    public String toString(){
+        return "Dog "+ this.name + ", weight: " + this.weight + ", strength: " + this.strength;
+    }
 
+
+    void fight(Dog dog){
+        if (this.strength < dog.strength){
+            System.out.println(dog.name + " won");
+        }else if(this.strength > dog.strength){
+            System.out.println(this.name + " won");
+        }
     }
 }
