@@ -14,12 +14,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "firstName ='" + firstName + '\'' +
-                " lastName ='" + lastName + '\'' +
-                " age ='" + age +
-                " money ='" + money + "$" +
-                '}';
+        return "Person{" + "firstName ='" + firstName + '\'' + " lastName ='" + lastName + '\'' + " age ='" + age + " money ='" + money + " $" + '}';
     }
 
     public String getFirstName() {
@@ -34,12 +29,11 @@ public class Person {
         return age;
     }
 
-    public int getMoney(){
-        return money;
-    }
-
     public void setMoney(int money) {
         this.money = money;
+    }
+    public int getMoney(){
+        return money;
     }
 
     public void withdrawMoney(Person person) {
@@ -51,5 +45,4 @@ public class Person {
         this(firstName, lastName, age);
         this.money = money;
     }
-
 }
