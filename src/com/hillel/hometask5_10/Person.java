@@ -6,13 +6,6 @@ public class Person {
         this.name = name;
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
-    public String getName(){
-        return name;
-    }
-
     public class Account {
         public String password;
 
@@ -20,16 +13,8 @@ public class Person {
             this.password = password;
         }
 
-        public void setPassword(String password){
-            this.password = password;
-        }
-        public String getPassword(){
-            return password;
-        }
-
-        public String displayAccount(String getName){
-            Person.this.name = getName;
-            return getName;
+        public String displayAccount(){
+            return Person.this.name;
         }
     }
 }
