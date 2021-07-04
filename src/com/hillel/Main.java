@@ -9,7 +9,7 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String[] array = new String[5];
 
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             int quantity = (5 - i);
             System.out.println("Введите " + quantity + " любых строк :");
             array[i] = reader.readLine();
@@ -20,28 +20,27 @@ public class Main {
             System.out.print(i + "/ ");
         }
         System.out.println();
-        System.out.println(array[0].length());
 
-        int num = 0;
-        for (int i = 0; i < array.length; i++) {
-            if ((array[i].length()) > num){
-                num = array[i].length();
+        StringBuffer stringBuffer = new StringBuffer ("a");
+        for (int i = 0; i < array.length - 1; i++) {
+            StringBuffer stringBuffer1 = new StringBuffer(array[i]);
+            StringBuffer stringBuffer2 = new StringBuffer(array[i+1]);
+            if (stringBuffer1.length() > stringBuffer2.length()+1){
+                stringBuffer= stringBuffer1;
             }
         }
-
-//        StringBuffer str = new StringBuffer("a");
-//        for (int i = 0; i < array.length; i++) {
-//            StringBuffer strBuf = new StringBuffer(array[i]);
-//            if(strBuf.equals(str)){
-//               str = strBuf;
-//            }
-//            System.out.println(str);
-//        }
-
-//        int m = array.get(0).length();
-//        for(String s:array){
-//            if (s.array() > m )
+        System.out.println("The biggest one is: "+ stringBuffer);
+        for (int i = 0; i < array.length - 1; i++) {
+            StringBuffer stringBuffer1 = new StringBuffer(array[i]);
+            StringBuffer stringBuffer2 = new StringBuffer(array[i+1]);
+            if (stringBuffer1.length() < stringBuffer2.length()+1){
+                stringBuffer= stringBuffer1;
+            }
         }
+        System.out.println("The smallest one is : " + stringBuffer);
+
+
+    }
 
     }
 
