@@ -28,13 +28,5 @@ public class ResidentialProperties extends Tax {
         int taxCalc = taxCalculate();
         return taxCalc/getPriceOfProperty();
     }
-//    public int taxCalc1 = taxCalc/priceOfProperty;
-
-
-//    @Override
-//    public int taxCalculate(int S, int taxK) {
-//        return (S* taxK* subsidiya/ priceOfProperty);
-//    }
-
 
 }
