@@ -19,10 +19,10 @@ public class RetailProperty extends Tax {
     }
 
     @Override
-    public int taxCalculate(int S, int taxK) {
+    public int taxCalculate() {
         if (proceeds <= 100) {
             return 0;
         }
-        return super.taxCalculate(S, taxK);
+        return super.taxCalculate();
     }
 }

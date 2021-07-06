@@ -9,7 +9,7 @@ public Tax(int S, int taxK){
     this.taxK = taxK;
 }
 
-public int taxCalculate(int S, int taxK){
+public int taxCalculate(){
     return (S * taxK);
 }
 
