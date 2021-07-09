@@ -15,6 +15,6 @@ public class Square extends Shape implements Drawable{
 
     @Override
     public double calculatePerimeter() {
-        return 0;
+        return side+4;
     }
 }

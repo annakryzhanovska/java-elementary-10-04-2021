@@ -8,6 +8,8 @@ public class ResidentialProperties extends Tax {
     private int priceOfProperty = 120;
     public ResidentialProperties(int S, int taxK, int subsidiya, int priceOfProperty){
         super(S, taxK);
+        this.subsidiya = subsidiya;
+        this.priceOfProperty = priceOfProperty;
     }
 
     public int getSubsidiya(){
@@ -25,8 +27,8 @@ public class ResidentialProperties extends Tax {
     }
 
     public int taxCalc1(){
-        int taxCalc = taxCalculate();
-        return taxCalc/getPriceOfProperty();
+        int taxCalc = super.taxCalculate();
+        return taxCalc/priceOfProperty;
     }
 
 }

@@ -1,6 +1,6 @@
 package com.hillel.lesson7.interf;
 
-public class Triangle extends Shape implements Drawable {
+public class Triangle extends Shape implements Erasable {
 
     double sideOne;
     double sideTwo;
@@ -20,5 +20,10 @@ public class Triangle extends Shape implements Drawable {
     @Override
     public double calculatePerimeter(){
         return sideThree +sideOne + sideTwo;
+    }
+
+    @Override
+    public void erase() {
+        System.out.println("erace triangle");
     }
 }
