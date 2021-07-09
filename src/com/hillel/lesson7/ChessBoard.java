@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ChessBoard {
-    List<ChessItem> items = new ArrayList<>();
+    List<ChessItem> function = new ArrayList<>();
     public void addItem(ChessItem item){
-        items.add(item);
+        function.add(item);
     }
 
     public void drawBoard(){
-        for(ChessItem item : items){
+        for(ChessItem item : function){
             item.draw();
         }
     }
