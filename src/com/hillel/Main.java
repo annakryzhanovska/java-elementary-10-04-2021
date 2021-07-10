@@ -21,25 +21,18 @@ public class Main {
         }
         System.out.println();
 
-        StringBuffer stringBuffer = new StringBuffer ("a");
-        for (int i = 0; i < array.length - 1; i++) {
-            StringBuffer stringBuffer1 = new StringBuffer(array[i]);
-            StringBuffer stringBuffer2 = new StringBuffer(array[i+1]);
-            if (stringBuffer1.length() > stringBuffer2.length()+1){
-                stringBuffer= stringBuffer1;
+        String min = array[0];
+        String max = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if(max.length()< array[i].length()){
+                max = array[i];
+            }
+            if (min.length()> array[i].length()){
+                min = array[i];
             }
         }
-        System.out.println("The biggest one is: "+ stringBuffer);
-        for (int i = 0; i < array.length - 1; i++) {
-            StringBuffer stringBuffer1 = new StringBuffer(array[i]);
-            StringBuffer stringBuffer2 = new StringBuffer(array[i+1]);
-            if (stringBuffer1.length() < stringBuffer2.length()+1){
-                stringBuffer= stringBuffer1;
-            }
-        }
-        System.out.println("The smallest one is : " + stringBuffer);
-
-
+        System.out.println("The biggest one is: " + max);
+        System.out.println("The smallest one is: " + min);
     }
 
     }
