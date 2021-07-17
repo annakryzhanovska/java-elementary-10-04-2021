@@ -1,8 +1,8 @@
 package com.hillel.hometask7_14;
 
-public class DoG extends AllAnimals implements Runnable, Climbable{
+public class Dog extends Animal implements Runnable, Climbable{
     String name;
-    public DoG(String name){
+    public Dog(String name){
         this.name = name;
     }
     @Override

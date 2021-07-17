@@ -16,50 +16,39 @@ public class MainClassOfAnimals {
         }
         }
 
-        public static AllAnimals createAnimal(String string){
-            AllAnimals allAnimals = null;
+        public static Animal createAnimal(String string){
+            Animal animal = null;
         switch(string.toLowerCase().trim()){
             case "cat":
-                allAnimals = new CaT("Sam");
+                animal = new Cat("Sam");
                 break;
             case "dog" :
-                allAnimals = new DoG("Bob");
+                animal = new Dog("Bob");
                 break;
             case "tiger":
-                allAnimals = new TigeR("Teddy");
+                animal = new Tiger("Teddy");
                 break;
             case "duck":
-                allAnimals = new Duck("Molly");
+                animal = new Duck("Molly");
                 break;
             default:
                 System.out.println("create an animal one more time pls: tiger, or cat, or dog, or duck");
                 break;
         }
-            return allAnimals;
+            return animal;
         }
 
-        public static void handleAnimal(AllAnimals allAnimals){
-        if(allAnimals instanceof DoG){
-            DoG dog = (DoG) allAnimals;
-            dog.climb();
-            dog.run();
+        public static void handleAnimal(Animal animal){
+        if(animal instanceof Runnable){
+            ((Runnable) animal).run();
         }
-        if(allAnimals instanceof CaT){
-            CaT cat = (CaT) allAnimals;
-                cat.climb();
-                cat.run();
-            }
-        if(allAnimals instanceof TigeR){
-            TigeR tigeR = (TigeR) allAnimals;
-            tigeR.climb();
-            tigeR.run();
-            }
-        if(allAnimals instanceof Duck){
-            Duck duck = (Duck) allAnimals;
-            duck.climb();
-            duck.run();
-            duck.fly();
-            }
+        if(animal instanceof Climbable){
+            ((Climbable) animal).climb();
+        }
+        if(animal instanceof Flyable){
+            ((Flyable) animal).fly();
+        }
+
         }
 }
 
