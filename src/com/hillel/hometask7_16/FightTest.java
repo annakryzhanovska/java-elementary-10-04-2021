@@ -2,6 +2,13 @@ package com.hillel.hometask7_16;
 
 public class FightTest {
     public static void main(String[] args) {
-//        System.out.println(saveClientLife(Attacking attacking));
+        Attacking attacking = new Attacking();
+        Bodyguard bodyguard = createBodyGuard();
+        bodyguard.saveClientLife(attacking);
+
+    }
+
+    public static Bodyguard createBodyGuard(){
+        return new Boxer();
     }
 }
