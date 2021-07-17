@@ -1,6 +1,6 @@
 package com.hillel.hometask7_14;
 
-public class CaT implements Flyable, Runnable, Climbable{
+public class CaT extends AllAnimals implements Runnable, Climbable{
     String name;
     public CaT(String name){
         this.name = name;
@@ -11,13 +11,7 @@ public class CaT implements Flyable, Runnable, Climbable{
     }
 
     @Override
-    public void fly() {
-        System.out.println("Cat " + name + " doesn't fly");
-    }
-
-    @Override
     public void run() {
         System.out.println("Cat " + name + " runs");
     }
-
 }

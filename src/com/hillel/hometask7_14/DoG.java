@@ -1,6 +1,6 @@
 package com.hillel.hometask7_14;
 
-public class DoG implements Flyable, Runnable, Climbable{
+public class DoG extends AllAnimals implements Runnable, Climbable{
     String name;
     public DoG(String name){
         this.name = name;
@@ -11,12 +11,7 @@ public class DoG implements Flyable, Runnable, Climbable{
     }
 
     @Override
-    public void fly() {
-        System.out.println("Dog " + name + " doesn't fly");
-    }
-
-    @Override
     public void run() {
-        System.out.println("Dog " + name + " runs(?)");
+        System.out.println("Dog " + name + " runs");
     }
 }

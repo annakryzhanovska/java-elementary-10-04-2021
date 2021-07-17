@@ -1,6 +1,6 @@
 package com.hillel.hometask7_14;
 
-public class TigeR implements Flyable, Runnable, Climbable {
+public class TigeR extends AllAnimals implements Runnable, Climbable {
     String name;
     public TigeR(String name){
         this.name = name;
@@ -8,11 +8,6 @@ public class TigeR implements Flyable, Runnable, Climbable {
     @Override
     public void climb() {
         System.out.println("Tiger " + name + " climbs");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println("Tiger " + name + " doesn't fly");
     }
 
     @Override
