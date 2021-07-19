@@ -40,7 +40,7 @@ public class Main {
 
 
 
-
+//                Product product = new Product(reader.readLine().toLowerCase().trim());
 //    ListIterator listIterator = products.listIterator();
 //
 //    //                for (ListIterator listIterator = products.listIterator(); listIterator.hasNext();) {

@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Iterator;
+
 
 public class Warehouse {
     public static void main(String[] args) throws IOException {
@@ -47,10 +49,18 @@ public class Warehouse {
                 break;
             case "remove":
                 System.out.println("Input name: ");
-                String name = reader.readLine().toLowerCase().trim();
+                Product product = new Product(reader.readLine().toLowerCase().trim());
 
-                removeProductsByName(products, name);
-                System.out.println("The product was removed ");
+                Iterator<Product> iterator = products.iterator();
+                while (iterator.hasNext()) {
+                    Product product1 = iterator.next();
+                    if (product1.getName().equals(product.getName())){
+                        iterator.remove();
+                        System.out.println("The product was removed");
+                    } else {
+                        System.out.println("The product was not found");
+                    }
+                }
                 System.out.println(products.toString());
                 System.out.println("Введите действие add, remove, exit для выхода: ");
                 break;
