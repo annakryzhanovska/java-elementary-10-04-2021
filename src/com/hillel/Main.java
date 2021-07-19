@@ -1,5 +1,7 @@
 package com.hillel;
 
+
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -35,6 +37,39 @@ public class Main {
         System.out.println("The smallest one is: " + min);
     }
 
-    }
+
+
+
+
+//    ListIterator listIterator = products.listIterator();
+//
+//    //                for (ListIterator listIterator = products.listIterator(); listIterator.hasNext();) {
+//////                    Product name1 = (Product) iterator.next();
+////                    if(listIterator.next().equals(name)){
+////                        System.out.println(products.indexOf(listIterator.next()));
+//////                        removeProductsByName(products, name);
+//////                        products.remove(products.indexOf(listIterator.previous()));
+////                        System.out.println("The product was removed ");
+////                    }else {
+//////                        System.out.println("The product was not found");
+////                    }
+////                }
+//    Iterator<Product> iterator = products.iterator();
+//                while (iterator.hasNext()) {
+//        Product product1 = iterator.next();
+//        if (product1.equals(product)) {
+//            products.remove(product1);
+//            System.out.println("The product was removed");
+//        } else {
+//            System.out.println("The product was not found");
+//        }
+//    }
+//                System.out.println(products.toString());
+//                System.out.println("Введите действие add, remove, exit для выхода: ");
+//                break;
+
+}
+
+
 
 
