@@ -67,9 +67,4 @@ public class Warehouse {
 
         }
     }
-
-    private static void removeProductsByName(ArrayList<Product> products, String name) {
-        products.removeIf(products1 -> products1.getName().equals(name));
-    }
-
 }
