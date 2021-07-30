@@ -9,6 +9,7 @@ import java.util.Map;
 
 
 public class Accounting {
+
     public static void main(String[] args) throws IOException,InvalidStatusException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Input the number of an order");

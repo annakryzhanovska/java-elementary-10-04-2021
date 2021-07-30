@@ -13,7 +13,7 @@ public class Order {
         return status;
     }
 
-    LocalDateTime dateOfOrder; // дата заказа
-    LocalDateTime updateOfOrder; // дата обновления
+    LocalDateTime dateOfOrder;
+    LocalDateTime updateOfOrder;
 
 }
